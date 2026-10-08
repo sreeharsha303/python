@@ -62,7 +62,53 @@ greet("harsha","pavagada")
 
 greet("harsha")'''
 
-def country(name="unknown"):
+'''def country(name="unknown"):
     print("country name is",name)
 country("india")
-country()
+country()'''
+
+
+#variable length argument: *args:
+#this is used to take multiple arguments in a function.
+#it is used when we do not know how many arguments will be passed to a function.
+'''def greet(*names):
+    for name in names:
+        print("hello",name) 
+greet("harsha","john","jane")'''
+
+'''def sum(*args):
+    print(args)
+    print(type(args))
+sum(10,20)
+sum(10,20,30)
+sum(10,20,30,40,50)'''
+
+
+#num1 = int(input("enter the number1::"))
+#num2 = int(input("enter the number2::"))    
+'''def add(*numbers):
+    total = 0
+    for i in numbers:
+        total += i
+    return total
+print(add(1,2,3,4,6,7,5))
+print(add(10,20,30,40,50))'''
+
+
+#variable length keyword argument: **kwargs:
+#this is used to take multiple keyword arguments in a function. OR
+#this is used to pass a variable number of keyword arguments to a function.
+
+
+
+
+
+
+def my_function(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+my_function(name="harsha",age=22,location="pavagada")
+my_function(name="john",age=25,location="bengaluru",country="india")
+
+
+
