@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Student Registration</h1>
+
+    <form>
+
+        <label for="name">Name:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required>
+
+        <br><br>
+        <hr>
+
+        <label for="email">Email:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required>
+
+        <br><br>
+        <hr>
+
+        <label for="password">Password:</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            required>
+
+        <br><br>
+        <hr>
+
+        <label for="age">Age:</label>
+        <input
+            type="number"
+            id="age"
+            name="age" min="0" max="120" required>
+
+        <br><br>
+        <hr>
+
+        <p>Gender:</p>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <br><br>
+        <hr>
+
+        <p>Skills:</p>
+
+        <input type="checkbox" id="python" name="skill" value="python">
+        <label for="python">Python</label>
+
+        <input type="checkbox" id="django" name="skill" value="django">
+        <label for="django">Django</label>
+
+        <input type="checkbox" id="mysql" name="skill" value="mysql">
+        <label for="mysql">MySQL</label>
+
+        <br><br>
+        <hr>
+
+        <label for="course">Course:</label>
+
+        <select id="course" name="course">
+            <option value="python">Python</option>
+            <option value="django">Django</option>
+            <option value="java">Java</option>
+        </select>
+
+        <br><br>
+        <hr>
+
+        <label for="message">Address:</label><br>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="30"
+            placeholder="Enter your address">
+        </textarea>
+
+        <br><br>
+        <hr>
+         <label for="menu">select your menu</label>
+        <select>
+            <optgroup label="veg">
+                <option value="">dosa</option>
+                <option value="">idli</option>
+                <option value="">vada</option>
+                <option value="">poori</option>
+            </optgroup>
+            <optgroup label="non-veg">
+                <option value="">chicken</option>
+                <option value="">mutton</option>
+                <option value="">fish</option>
+                <option value="">prawns</option>
+            </optgroup>
+        </select><br><br>
+        <hr>
+
+    <input type="text" placeholder="enter your college name" list="college"><br><br>
+    <datalist id="college">
+        <option value="dsatm">DSATM</option>
+        <option value="vtu">VTU</option>
+        <option value="anna">Anna University</option>
+        <option value="ms">MS University</option>
+        <option value="dsu">DSU</option>
+    </datalist>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+
+</html>
